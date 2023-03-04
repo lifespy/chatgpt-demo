@@ -11,12 +11,12 @@ export default () => {
     let lastScrollTop = 0
 
     setInterval(() => {
-        let temp =document.getElementsByClassName('message-list')[0].scrollTop
+        let temp = window.document.getElementsByClassName('message-list')[0].scrollTop
         if (temp < lastScrollTop){
             scroll = false
         }
-        let height = document.getElementsByClassName('message-list')[0].clientHeight + document.getElementsByClassName('message-list')[0].scrollTop
-        if (Math.abs(height - document.getElementsByClassName('message-list')[0].scrollHeight) < 10){
+        let height = window.document.getElementsByClassName('message-list')[0].clientHeight + window.document.getElementsByClassName('message-list')[0].scrollTop
+        if (Math.abs(height - window.document.getElementsByClassName('message-list')[0].scrollHeight) < 10){
             scroll = true
         }
         lastScrollTop = temp
@@ -27,7 +27,7 @@ export default () => {
         if (!scroll) {
             return
         }
-        document.getElementsByClassName('message-list')[0].scrollTop = 99999
+        window.document.getElementsByClassName('message-list')[0].scrollTop = 99999
     }, 500)
 
     const handleButtonClick = async () => {
