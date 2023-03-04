@@ -24,3 +24,9 @@
 .message table tbody tr:last-of-type {
   border-bottom: 2px solid #64748b40;
 }
+
+.message-list{
+  overflow: hidden;
+  overflow-y: scroll;
+  height: calc(100vh - 500px);
+}
