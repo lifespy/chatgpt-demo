@@ -86,6 +86,7 @@ export default () => {
         ])
         setCurrentAssistantMessage('')
         setLoading(false)
+        window.document.getElementById("input").focus()
     }
 
     const clear = () => {
