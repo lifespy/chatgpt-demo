@@ -34,8 +34,8 @@
 /*定义滚动条高宽及背景
  高宽分别对应横竖滚动条的尺寸*/
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 0px;
+  height: 0px;
   background-color: rgba(0,0,0,.2);
 }
 
