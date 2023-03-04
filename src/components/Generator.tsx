@@ -15,6 +15,9 @@ export default () => {
         if (temp < lastScrollTop){
             scroll = false
         }
+        if (Math.abs(temp - lastScrollTop) < 10){
+            scroll = true
+        }
         lastScrollTop = temp
     }, 100)
 
