@@ -15,7 +15,7 @@ export default () => {
         if (temp < lastScrollTop){
             scroll = false
         }
-        if (Math.abs(temp - lastScrollTop) < 10){
+        if (Math.abs(temp - document.getElementsByClassName('message-list')[0].scrollHeight) < 10){
             scroll = true
         }
         lastScrollTop = temp
