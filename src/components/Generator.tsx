@@ -15,8 +15,8 @@ export default () => {
         if (temp < lastScrollTop){
             scroll = false
         }
-        let a = document.getElementsByClassName('message-list')[0].clientHeight + document.getElementsByClassName('message-list')[0].scrollTop
-        if (Math.abs(a - document.getElementsByClassName('message-list')[0].scrollHeight) < 10){
+        let height = document.getElementsByClassName('message-list')[0].clientHeight + document.getElementsByClassName('message-list')[0].scrollTop
+        if (Math.abs(height - document.getElementsByClassName('message-list')[0].scrollHeight) < 10){
             scroll = true
         }
         lastScrollTop = temp
